@@ -8,8 +8,7 @@ with open("StudentsPerformance 14.csv") as f:
 
 filteredData = list(
     filter(
-        lambda x: x["race/ethnicity"] == "group C"
-        and x["test preparation course"] == "completed",
+        lambda x: x["race/ethnicity"] == "group C" and x["test preparation course"] == "completed",
         data,
     )
 )
